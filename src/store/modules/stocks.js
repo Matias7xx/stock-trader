@@ -11,7 +11,7 @@ export default {
     },
     actions: {
         buyStock({ commit }, order) { //Comprar ação
-            commit()
+            commit('buyStock', order)
         },
         initStocks({ commit }) { //Inicializar a lista de ações 
             commit('setStocks', stocks )
